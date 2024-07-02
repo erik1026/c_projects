@@ -9,11 +9,11 @@ double CelsiusToKelvin(double celsius){
 }
 
 double FahrenheitToCelsius(double fahr){
-
+    return (fahr - 32) * 5/9.f;
 }
 
 double FahrenheitToKelvin(double fahr) {
-
+    return (fahr - 32) * 5/9.f + 273.15;
 }
 
 double KelvinToCelsius(double kelvin){
