@@ -25,9 +25,11 @@ int main(){
     // Read from the file
     file = fopen("file.txt", "r");
 
-    fgets(text, BUFFER_SIZE, file);
-
-    printf("%s\n", text);
+    if(fgets(text, BUFFER_SIZE, file) != NULL){
+        printf("%s\n", text);
+    } else {
+        printf("Unable to read from the file...\n");
+    }
 
     return 0;
 }
