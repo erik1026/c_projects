@@ -39,6 +39,8 @@ int main(){
         } else if (guess > randomNum){
             printf("Too high...\n");
         }
+
+        printf("You have %d more guesses\n", 3 - (count+1));
         
         count++;
     }
