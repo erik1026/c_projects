@@ -25,6 +25,16 @@ int array_min(int* array, int size){
     return min;
 }
 
+double array_avg(int* array, int size){
+    int sum = 0;
+
+    for(int i = 0; i < size; ++i){
+        sum += array[i];
+    }
+
+    return (double)sum / (double)size;
+}
+
 int main() {
     
     int myArray[] = {10, 11, 50, 36, -1};
@@ -35,6 +45,9 @@ int main() {
 
     // Array min
     printf("Minimum of my array: %d\n", array_min(myArray, myArraySize));
+
+    // Array avg
+    printf("Avg of my array: %.2f\n", array_avg(myArray, myArraySize));
 
     return 0;
 }
